@@ -1,0 +1,7 @@
+@PACKAGE_INIT@
+
+# Compute relative paths
+set(_import_prefix "${PACKAGE_PREFIX_DIR}")
+
+include("${CMAKE_CURRENT_LIST_DIR}/omnai-nadi-driverTargets.cmake")
+check_required_components(omnai-nadi-driver)
